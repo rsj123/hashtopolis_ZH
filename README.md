@@ -45,7 +45,7 @@ Web管理界面是所有客户端代理的单一访问点。 新代理部署需�
 
 ## 设置和使用
 
-请访问wiki[wiki](https://github.com/rsj123/hashtopolis_ZH/wiki) 获取更多有关设置和升级的信息.
+请访问[wiki](https://github.com/rsj123/hashtopolis_ZH/wiki) 获取更多有关设置和升级的信息.
 
 Hashtopolis的一些截图（由winxp5421和s3in！c提供）: [Imgur1](http://imgur.com/gallery/Fj0s0) [Imgur2](http://imgur.com/gallery/LzTsI)
 
