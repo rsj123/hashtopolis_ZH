@@ -6,19 +6,19 @@
   <div class="table-responsive">
     <table class="table table-bordered">
 		  <tr>
-			  <th>User type</th>
+			  <th>用户类型</th>
 			  <td>
 				  [[group.getGroupName()]]
 			  </td>
 		  </tr>
 		  <tr>
-			  <th>Register date</th>
+			  <th>注册日期</th>
 			  <td>
 				  [[date([[config.getVal(DConfig::TIME_FORMAT)]], [[user.getRegisteredSince()]])]]
 			  </td>
 		  </tr>
 		  <tr>
-			  <th>Email address</th>
+			  <th>Email 地址</th>
 			  <td>
 				  <form class='form-inline' action="account.php" method="post">
 					  <input type='hidden' name='action' value='[[$DAccountAction::SET_EMAIL]]'>
@@ -29,24 +29,24 @@
 			  </td>	
 		  </tr>
 		  <tr>
-			  <th>Set session length</th>
+			  <th>设置session存活时间</th>
 			  <td>
 				  <form class='form-inline' action="account.php" method="post">
 					  <input type='hidden' name='action' value='[[$DAccountAction::UPDATE_LIFETIME]]'>
-					  <input type='text' name='lifetime' class='form-control' value='[[user.getSessionLifetime()]]' title="Session Length">&nbsp; seconds &nbsp;
+					  <input type='text' name='lifetime' class='form-control' value='[[user.getSessionLifetime()]]' title="Session Length">&nbsp; 秒 &nbsp;
 					  <input type="hidden" name="csrf" value="[[csrf]]">
             <button type="submit" class='btn btn-light' data-toggle="tooltip" data-placement="top" title="Set"><i class="fas fa-save" aria-hidden="true"></i></button>
 				  </form>
 			  </td>	
 		  </tr>
 		  <tr>
-			  <th>Password</th>
+			  <th>密码</th>
 			  <td>
 				  <form class='form-inline' action="account.php" method="post">
 					  <input type='hidden' name='action' value='[[$DAccountAction::CHANGE_PASSWORD]]'>
-					  <input type='password' name='oldpass' class='form-control' placeholder='Old password here...'>&nbsp;&nbsp;
-					  <input type='password' name='newpass' class='form-control' placeholder='New password here...'>&nbsp;&nbsp;
-					  <input type='password' name='reppass' class='form-control' placeholder='Repeat password...'>&nbsp;&nbsp;
+					  <input type='password' name='oldpass' class='form-control' placeholder='旧密码...'>&nbsp;&nbsp;
+					  <input type='password' name='newpass' class='form-control' placeholder='新密码...'>&nbsp;&nbsp;
+					  <input type='password' name='reppass' class='form-control' placeholder='重复密码...'>&nbsp;&nbsp;
 					  <input type="hidden" name="csrf" value="[[csrf]]">
 					  <input type="submit" class='btn btn-light' value="Change Password">
 				  </form>
